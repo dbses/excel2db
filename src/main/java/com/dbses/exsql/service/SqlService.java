@@ -13,7 +13,7 @@ public class SqlService {
     private static final String BRACKET_LETF = "(";
     private static final String BRACKET_RIGHT = ")";
     private static final String COMMENT = "COMMENT";
-    private static final String AUTO_INCREMENT = "AUTO_INCREMENT";
+    private static final String AUTO_INCREMENT = "AUTO INCREMENT";
     private static final String EMPTY = " ";
     private static final String QUOTES = "'";
     private static final String COMMA = ",";
