@@ -31,6 +31,7 @@ public class SqlService {
             String tableName = entry.getKey();
             List<Table> tables = entry.getValue();
             sql.append("-- 创建").append(tableName.toUpperCase()).append(BREAK_LINE);
+            sql.append("DROP TABLE IF EXISTS ").append(tableName).append(";").append(BREAK_LINE);
             sql.append(CREATE_TABLE).append(EMPTY).append(tableName).append(EMPTY).append(BRACKET_LETF).append(BREAK_LINE);
             for (int i = 0; i < tables.size(); i++) {
                 Table table = tables.get(i);
